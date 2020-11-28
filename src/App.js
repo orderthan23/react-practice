@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
+//AND 연산자(&&)를 사용한 조건부 렌더링
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const name = '뤼액트';
+    return (
+        <div>
+            {name ==='리액트' ? (<h1>리액트베이비.</h1>) : (<h2>리액트가 뭐라누</h2>)}
+        </div>
+    );
 }
 
 export default App;
