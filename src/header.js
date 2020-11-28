@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import styled from "styled-components";
 
 const HeaderWrap = styled.div`
@@ -20,8 +20,8 @@ const LogoText = styled.p`
 
 const logoZone = {
     verticalAlign: "middle",
-    width : "50%",
-    display : "inline-block"
+    width: "50%",
+    display: "inline-block"
 
 }
 const Link = styled.a`
@@ -32,12 +32,9 @@ const Link = styled.a`
      line-height : 100px;
      margin-right : 20px;
 `;
-const Links = styled.div`
-    display : inline-block;
-    
-`
-const thirdLinkStyle ={
-    marginRight : "200px"
+
+const thirdLinkStyle = {
+    marginRight: "200px"
 }
 
 function Header() {
@@ -58,11 +55,9 @@ function Header() {
                     </tr>
 
                 </table>
-                <links>
                 <Link style={thirdLinkStyle}>로그인</Link>
                 <Link>로그인</Link>
                 <Link>로그인</Link>
-                </links>
 
 
             </HeaderWrap>
