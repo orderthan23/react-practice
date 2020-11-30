@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from "styled-components";
 
 const HeaderWrap = styled.div`
@@ -25,12 +25,13 @@ const logoZone = {
 
 }
 const Link = styled.a`
-     color : orangeRed;
+     color : white;
      font-size : 20px;
+     font-weight : bolder;
      text-decoration : none;
      float : right;
      line-height : 100px;
-     margin-right : 20px;
+     margin-right : 40px;
 `;
 
 const thirdLinkStyle = {
@@ -38,7 +39,7 @@ const thirdLinkStyle = {
 }
 
 function Header() {
-
+    const id = "sample";
     const imagePath = "./logo192.png";
     return (
         <div>
@@ -51,20 +52,15 @@ function Header() {
                         <td rowSpan={3}>
                             <LogoText> Welcome React!</LogoText>
                         </td>
-
                     </tr>
-
                 </table>
-                <Link style={thirdLinkStyle}>로그인</Link>
-                <Link>로그인</Link>
-                <Link>로그인</Link>
 
-
+                <Link style={thirdLinkStyle}>Login</Link>
+                <Link>Join</Link>
+                <Link>Help</Link>
             </HeaderWrap>
         </div>
     );
 }
-
-
 export default Header;
 
